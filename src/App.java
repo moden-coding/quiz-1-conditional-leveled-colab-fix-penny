@@ -65,7 +65,37 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        //Complete basic task below:
+        System.out.println("Give a number:");
+        int number = Integer.valueOf(scanner.nextLine());
+        int divide = (number%2);
+        int five = (number%5);
+        int three = (number%3);
+        int seven = (number%7);
+        if (divide == 0){
+            System.out.println("The number was even");
+        } else if (divide == 1){
+            System.out.println("The number was odd");
+        } if (three == 0 && five == 0){
+            System.out.println("The number is divisible by both 3 and 5");
+        } else if (three == 0){
+            System.out.println("The number is divisible by 3");
+        } else if (five == 0){
+            System.out.println("The number is divisible by 5");
+
+        } else{
+            System.out.println("The number is not divisible by 3 or 5");
+        } if (number < 0 || number > 100){
+            System.out.println("Wrong number!");
+        } else if (number == 1){
+            System.out.println("The number is not prime");
+        
+        }else if (number == 3 || number == 5 || number == 7) {
+            System.out.println("The number is prime");
+        }else if (divide > 0 && five > 0 && three > 0 && seven > 0){
+            System.out.println("The number is prime");
+        } else{
+            System.out.println("The number is not prime");
+        }
 
 
 
